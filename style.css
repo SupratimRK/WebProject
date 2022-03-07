@@ -1,0 +1,224 @@
+@font-face {
+    font-family:SamsungOne;
+    src: url(SamsungOne/SamsungOne_Bold.ttf);
+}
+@font-face {
+    font-family: SamStd;
+    src: url(SamsungOne/SamsungOne_Std.ttf);
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+ 
+    
+    header{
+     width: 100%;
+     height: 100vh;
+     background-color: #fafafa;
+    }
+
+
+    .mainheader{
+     width: 100%;
+     height: 10%;
+     display: inline-flex;
+     justify-content:space-around;
+     align-items:center;
+     font-family:SamsungOne;
+     border-top: solid;
+     border-width: 8px;
+     border-color: #0072de;
+    }
+    
+
+    .mainheader .logo img{
+        width: 75px;
+        height: 75px;
+        margin-top: 15px;
+        margin-right: 15px;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        .mainheader .logo img {
+            display: none;
+        }
+    }
+    
+
+   .navbar{
+     width: 80%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-transform: uppercase;
+     font-family:SamsungOne;
+    }
+
+
+    ul{
+        flex: 1;
+        font-family:SamsungOne;
+    }
+    ul li{
+        display: inline-flex;
+        list-style: none;
+        margin: 0 25px;
+    }
+    ul li a{
+        color: #000;
+        position: relative;
+        text-decoration: none;
+        border: solid 2px;
+        border-width: 2px;
+        border-radius: 50px;
+        padding: 6px 15px;
+        transition: 0.5s;
+        font-size: 3vh;
+    }
+    
+    ul li a:hover{
+        text-decoration: none;
+        background-color: #000;
+        color: #fafafa;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #000;
+        border-radius: 50px;
+        padding: 6px 30px;
+        transition: 0.5s;
+
+    }
+    .menubtn{
+        margin-right: 1%;
+        font-family:SamsungOne;
+    }
+    .menubtn button{
+     padding: 9px 20px;
+     text-align: center;
+     font-size: 16px;
+     color: #fafafa;
+     border: none;
+     background-image: linear-gradient(to right,#0381fe,#0072de);
+     border-radius: 100px;
+     cursor: pointer;
+     font-family:SamsungOne;
+     font-size: 3vh;
+    }
+
+    .menubtn button:hover{
+        padding: 9px 20px;
+        text-align: center;
+        font-size: 16px;
+        color: #fafafa;
+        border: none;
+        background-image: linear-gradient(to left,#0381fe,#0004de);
+        border-radius: 100px;
+        cursor: pointer;
+        font-family:SamsungOne;
+       }
+
+
+    .navbar button{
+        font-size: 16px;
+        padding: 6px 15px;
+        text-align: center;
+        color: #fafafa;
+        border: solid 2px;
+        border-color: #000;
+        background-color: #000;
+        border-radius: 100px;
+        cursor: none;
+        font-family:SamsungOne;
+        transition: 0.5s;
+        font-size: 3vh;
+    }
+    
+    .navbar button:hover{  
+        color: #000;
+        border: solid 2px;
+        border-color: #000;
+        background-color: #fafafa;
+        padding: 6px 30px;
+        cursor: not-allowed;
+        transition: 0.5s;
+    }
+    
+    main{
+     width: 100%;
+     height: 82%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     font-family:SamsungOne;
+    }
+    
+    main .right-sec{
+     padding-right: 0;
+
+    }
+    
+    main .left-sec{
+     padding-left: 100px;
+     margin-bottom: 200px;
+    }
+
+    header .bottom{
+        width: 100%;
+        padding: 0.6%;
+        margin-top: 8px;
+        text-align:center;
+        font-size: 12px;
+        color: #fafafa;
+        background-color: #000;
+        display: flex;
+        justify-content: space-between;
+        cursor: none;
+        font-family:SamStd;
+    }
+
+    .left-sec h2{
+     font-size: 4vh;
+     text-transform: capitalize;
+     font-weight: lighter;
+     color: #000;
+     margin-top: 100px;
+    }
+    
+    .left-sec h1{
+     font-size: 9vh;
+     text-transform: capitalize;
+     font-weight: 700;
+     margin: 15px 0;
+    }
+    
+    .left-sec p{
+        font-size: 3vh;
+        margin-bottom: 5vh;
+    }
+    
+    .left-sec button{
+     padding: 12px 30px;
+     text-align: center;
+     font-size: 3vh;
+     color: #fafafa;
+     border: none;
+     background-image: linear-gradient(to left,#0381fe,#0072de);
+     border-radius: 35px;
+     cursor:pointer;
+     font-family:SamsungOne;
+    }
+
+    .left-sec button:hover{
+        background-image: linear-gradient(to right,#0381fe,#0004de);
+    }
+
+    #loader{
+        background: #fcfefc url(loader.gif) no-repeat center center;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+    }
+

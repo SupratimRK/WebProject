@@ -1,0 +1,235 @@
+@font-face {
+    font-family:SamsungOne;
+    src: url(SamsungOne/SamsungOne_Bold.ttf);
+}
+@font-face {
+    font-family: SamStd;
+    src: url(SamsungOne/SamsungOne_Std.ttf);
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(217deg, rgba(249, 182, 202, 0.5) 0%, rgba(249, 182, 202, 0.5) 14.286%,rgba(235, 169, 206, 0.5) 14.286%, rgba(235, 169, 206, 0.5) 28.572%,rgba(220, 157, 210, 0.5) 28.572%, rgba(220, 157, 210, 0.5) 42.858%,rgba(206, 144, 214, 0.5) 42.858%, rgba(206, 144, 214, 0.5) 57.144%,rgba(192, 131, 217, 0.5) 57.144%, rgba(192, 131, 217, 0.5) 71.43%,rgba(177, 119, 221, 0.5) 71.43%, rgba(177, 119, 221, 0.5) 85.716%,rgba(163, 106, 225, 0.5) 85.716%, rgba(163, 106, 225, 0.5) 100.002%),linear-gradient(108deg, rgb(184, 35, 128) 0%, rgb(184, 35, 128) 14.286%,rgb(190, 62, 123) 14.286%, rgb(190, 62, 123) 28.572%,rgb(197, 88, 117) 28.572%, rgb(197, 88, 117) 42.858%,rgb(203, 115, 112) 42.858%, rgb(203, 115, 112) 57.144%,rgb(209, 142, 107) 57.144%, rgb(209, 142, 107) 71.43%,rgb(216, 168, 101) 71.43%, rgb(216, 168, 101) 85.716%,rgb(222, 195, 96) 85.716%, rgb(222, 195, 96) 100.002%);
+}
+
+
+
+    .card{
+     height: 70vh;
+        width: 70vh;
+        max-width: 84%;
+        background-image: radial-gradient(circle at top right, rgb(36, 9, 119) 0%, rgb(36, 9, 119) 48%,rgb(72, 7, 149) 48%, rgb(72, 7, 149) 53%,rgb(109, 5, 178) 53%, rgb(109, 5, 178) 56%,rgb(145, 2, 208) 56%, rgb(145, 2, 208) 69%,rgb(181, 0, 237) 69%, rgb(181, 0, 237) 100%);
+        background-position: center;
+       display: flex;
+       align-items:center;
+       justify-content:space-around;
+       margin-top: 15vh;
+       margin-bottom: 15vh;
+       margin-left: 8%;
+       border: solid 0px;
+       border-radius: 4vh;
+       -webkit-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.8);
+       -moz-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.8);
+       box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.8);
+       float: left;
+       flex-direction: column;
+}
+
+.card2{
+ height: 70vh;
+ width: 70vh;
+ max-width: 84%;
+ background-image: radial-gradient(circle at top left, rgb(33, 29, 75) 0%, rgb(33, 29, 75) 4%,rgb(29, 39, 97) 4%, rgb(29, 39, 97) 39%,rgb(24, 49, 120) 39%, rgb(24, 49, 120) 45%,rgb(20, 59, 142) 45%, rgb(20, 59, 142) 69%,rgb(15, 69, 164) 69%, rgb(15, 69, 164) 71%,rgb(11, 79, 186) 71%, rgb(11, 79, 186) 75%,rgb(6, 89, 209) 75%, rgb(6, 89, 209) 79%,rgb(2, 99, 231) 79%, rgb(2, 99, 231) 100%);
+ background-position: center;
+   display:inline-flex;
+   align-items:center;
+   flex-direction: column;
+   justify-content:center;
+   margin-top: 15vh;
+   margin-bottom: 15vh;
+   margin-right: 8%;
+   border: solid 0px;
+   border-radius: 4vh;
+   -webkit-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.8);
+   -moz-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.8);
+   box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.8);
+   float: right;
+}
+
+
+.upi h1{
+    font-family:SamsungOne;
+    margin: 1.75vw;
+    align-items: center;
+    background-image: linear-gradient(45deg, rgba(49, 74, 89, 0.45) 0%, rgba(49, 74, 89, 0.45) 12.5%,rgba(122, 86, 72, 0.45) 12.5%, rgba(122, 86, 72, 0.45) 25%,rgba(170, 94, 60, 0.45) 25%, rgba(170, 94, 60, 0.45) 37.5%,rgba(219, 102, 49, 0.45) 37.5%, rgba(219, 102, 49, 0.45) 50%,rgba(146, 90, 66, 0.45) 50%, rgba(146, 90, 66, 0.45) 62.5%,rgba(98, 82, 78, 0.45) 62.5%, rgba(98, 82, 78, 0.45) 75%,rgba(195, 98, 55, 0.45) 75%, rgba(195, 98, 55, 0.45) 87.5%,rgba(73, 78, 83, 0.45) 87.5%, rgba(73, 78, 83, 0.45) 100%),linear-gradient(135deg, rgb(117, 6, 152),rgb(110, 34, 251));
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border: solid 0px;
+    border-radius: 50px;
+    display: inline;
+    font-size: 3vh;
+    color: #fafafa;
+    -webkit-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.8);
+   -moz-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.8);
+   box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.8);
+}
+
+
+.upi1 button{
+    font-family:SamsungOne;
+    margin: 1.75vw;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 7px 40px;
+    border: solid 0px;
+    border-radius: 50px;
+    display: inline;
+    font-size: 3vh;
+    color: #292075;
+    cursor: pointer;
+}
+
+.upi1 button:hover{
+    background-color: #292075;
+    color: #fafafa; 
+    cursor: pointer;
+}
+
+
+
+.upi2 button{
+    font-family:SamsungOne;
+    margin: 1.75vw;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 7px 40px;
+    border: solid 0px;
+    border-radius: 50px;
+    display: inline;
+    font-size: 3vh;
+    color: #292075;
+    cursor: pointer;
+}
+
+.upi2 button:hover{
+    background-color: #292075;
+    color: #fafafa; 
+    cursor: pointer;
+}
+
+
+.upi3 button{
+    font-family:SamsungOne;
+    margin: 1.75vw;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 7px 40px;
+    border: solid 0px;
+    border-radius: 50px;
+    display: inline;
+    font-size: 3vh;
+    color: #292075;
+    cursor: pointer;
+}
+
+.upi3 button:hover{
+    background-color: #292075;
+    color: #fafafa; 
+    cursor: pointer;
+}
+
+.ac h1{
+    font-family:SamsungOne;
+    margin: 1.75vw;
+    align-items: center;
+    background-image: linear-gradient(157.5deg, rgb(148, 31, 115) 0%, rgb(148, 31, 115) 42%,rgb(129, 38, 114) 42%, rgb(129, 38, 114) 53%,rgb(110, 44, 113) 53%, rgb(110, 44, 113) 68%,rgb(91, 51, 113) 68%, rgb(91, 51, 113) 70%,rgb(72, 58, 112) 70%, rgb(72, 58, 112) 83%,rgb(53, 64, 111) 83%, rgb(53, 64, 111) 97%,rgb(34, 71, 110) 97%, rgb(34, 71, 110) 100%),linear-gradient(90deg, rgb(148, 31, 115) 0%, rgb(148, 31, 115) 42%,rgb(129, 38, 114) 42%, rgb(129, 38, 114) 53%,rgb(110, 44, 113) 53%, rgb(110, 44, 113) 68%,rgb(91, 51, 113) 68%, rgb(91, 51, 113) 70%,rgb(72, 58, 112) 70%, rgb(72, 58, 112) 83%,rgb(53, 64, 111) 83%, rgb(53, 64, 111) 97%,rgb(34, 71, 110) 97%, rgb(34, 71, 110) 100%),linear-gradient(0deg, rgb(148, 31, 115) 0%, rgb(148, 31, 115) 42%,rgb(129, 38, 114) 42%, rgb(129, 38, 114) 53%,rgb(110, 44, 113) 53%, rgb(110, 44, 113) 68%,rgb(91, 51, 113) 68%, rgb(91, 51, 113) 70%,rgb(72, 58, 112) 70%, rgb(72, 58, 112) 83%,rgb(53, 64, 111) 83%, rgb(53, 64, 111) 97%,rgb(34, 71, 110) 97%, rgb(34, 71, 110) 100%),linear-gradient(90deg, rgb(43, 115, 147),rgb(213, 181, 127)); background-blend-mode:overlay,overlay,overlay,normal;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: solid 0px;
+    border-radius: 50px;
+    display: flex;
+    font-size: 3vh;
+    color: #fafafa;
+    -webkit-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.8);
+   -moz-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.8);
+   box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.8);
+}
+
+.sbi{
+    background-image: radial-gradient(circle at 44% 67%, hsla(75,0%,92%,0.1) 0%, hsla(75,0%,92%,0.1) 30%,transparent 30%, transparent 34%,transparent 34%, transparent 100%),radial-gradient(circle at 33% 92%, hsla(75,0%,92%,0.1) 0%, hsla(75,0%,92%,0.1) 16%,transparent 16%, transparent 53%,transparent 53%, transparent 100%),radial-gradient(circle at 0% 46%, hsla(75,0%,92%,0.1) 0%, hsla(75,0%,92%,0.1) 42%,transparent 42%, transparent 61%,transparent 61%, transparent 100%),radial-gradient(circle at 47% 44%, hsla(75,0%,92%,0.1) 0%, hsla(75,0%,92%,0.1) 96%,transparent 96%, transparent 97%,transparent 97%, transparent 100%),radial-gradient(circle at 34% 28%, hsla(75,0%,92%,0.1) 0%, hsla(75,0%,92%,0.1) 26%,transparent 26%, transparent 85%,transparent 85%, transparent 100%),linear-gradient(135deg, rgb(48, 2, 209),rgb(100, 28, 120));
+    border: solid;
+    border-width: 3%;
+    border-color: #fafafa;
+    border-radius: 14px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-family:SamsungOne;
+    color: #fafafa;
+}
+
+.sbi h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+
+
+.ib{
+    background-image: radial-gradient(circle at 47% 14%, rgba(205, 205, 205,0.04) 0%, rgba(205, 205, 205,0.04) 43%,transparent 43%, transparent 100%),radial-gradient(circle at 35% 12%, rgba(215, 215, 215,0.04) 0%, rgba(215, 215, 215,0.04) 4%,transparent 4%, transparent 100%),radial-gradient(circle at 1% 35%, rgba(24, 24, 24,0.04) 0%, rgba(24, 24, 24,0.04) 37%,transparent 37%, transparent 100%),radial-gradient(circle at 21% 1%, rgba(0, 0, 0,0.04) 0%, rgba(0, 0, 0,0.04) 26%,transparent 26%, transparent 100%),radial-gradient(circle at 23% 82%, rgba(249, 249, 249,0.04) 0%, rgba(249, 249, 249,0.04) 60%,transparent 60%, transparent 100%),radial-gradient(circle at 11% 54%, rgba(251, 251, 251,0.04) 0%, rgba(251, 251, 251,0.04) 23%,transparent 23%, transparent 100%),radial-gradient(circle at 69% 68%, rgba(234, 234, 234,0.04) 0%, rgba(234, 234, 234,0.04) 10%,transparent 10%, transparent 100%),linear-gradient(90deg, rgb(228, 46, 222),rgb(63, 61, 215));
+    border: solid;
+    border-width: 3%;
+    border-color: #fafafa;
+    border-radius: 14px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-family:SamsungOne;
+    color: #fafafa;
+}
+
+.ib h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.scroll{
+        font-family:SamsungOne;
+        margin-bottom: 0.4vw;
+        align-items: center;
+        background-color: #fafafa;
+        padding: 7px 40px;
+        border: solid 0px;
+        border-radius: 50px;
+        display: inline;
+        font-size: 3vh;
+        color: #292075;
+        cursor: pointer;
+        cursor: all-scroll;
+}
+
+@media only screen and (min-width: 1200px) {
+    .scroll {
+        display: none;
+    }
+}
+
+
+

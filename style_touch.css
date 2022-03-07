@@ -1,0 +1,280 @@
+@font-face {
+    font-family:SamsungOne;
+    src: url(SamsungOne/SamsungOne_Bold.ttf);
+}
+@font-face {
+    font-family: SamStd;
+    src: url(SamsungOne/SamsungOne_Std.ttf);
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at top right, rgb(105, 135, 213) 0%, rgb(105, 135, 213) 14.286%,rgb(94, 121, 206) 14.286%, rgb(94, 121, 206) 28.572%,rgb(82, 107, 199) 28.572%, rgb(82, 107, 199) 42.858%,rgb(71, 94, 193) 42.858%, rgb(71, 94, 193) 57.144%,rgb(59, 80, 186) 57.144%, rgb(59, 80, 186) 71.43%,rgb(48, 66, 179) 71.43%, rgb(48, 66, 179) 85.716%,rgb(36, 52, 172) 85.716%, rgb(36, 52, 172) 100.002%);
+    background-position: center;
+    overflow: hidden;
+    z-index: -1;
+
+    }
+
+
+   .card{
+       height: 80vh;
+       max-width: 70vh;
+       background-image: linear-gradient(135deg, rgba(22, 31, 43, 0.5) 0%, rgba(22, 31, 43, 0.5) 12.5%,rgba(53, 28, 54, 0.5) 12.5%, rgba(53, 28, 54, 0.5) 25%,rgba(83, 25, 65, 0.5) 25%, rgba(83, 25, 65, 0.5) 37.5%,rgba(114, 22, 76, 0.5) 37.5%, rgba(114, 22, 76, 0.5) 50%,rgba(144, 20, 86, 0.5) 50%, rgba(144, 20, 86, 0.5) 62.5%,rgba(175, 17, 97, 0.5) 62.5%, rgba(175, 17, 97, 0.5) 75%,rgba(205, 14, 108, 0.5) 75%, rgba(205, 14, 108, 0.5) 87.5%,rgba(236, 11, 119, 0.5) 87.5%, rgba(236, 11, 119, 0.5) 100%),linear-gradient(225deg, rgb(188, 0, 159) 0%, rgb(188, 0, 159) 12.5%,rgb(173, 4, 150) 12.5%, rgb(173, 4, 150) 25%,rgb(158, 7, 141) 25%, rgb(158, 7, 141) 37.5%,rgb(143, 11, 132) 37.5%, rgb(143, 11, 132) 50%,rgb(129, 15, 124) 50%, rgb(129, 15, 124) 62.5%,rgb(114, 19, 115) 62.5%, rgb(114, 19, 115) 75%,rgb(99, 22, 106) 75%, rgb(99, 22, 106) 87.5%,rgb(84, 26, 97) 87.5%, rgb(84, 26, 97) 100%);
+       background-position: center;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin-top: 10vh;
+       margin-bottom: 10vh;
+       margin-left: 8%;
+       margin-right: 8%;
+       border: solid 0px;
+       border-radius: 4vh;
+       -webkit-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.8);
+       -moz-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.8);
+       box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.8);
+   }
+
+
+.mobile button{
+    font-family:SamsungOne;
+    margin: 1.75vw;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 7px 40px;
+    border: solid 0px;
+    border-radius: 50px;
+    display: inline;
+    font-size: 3vh;
+    color: #0072de;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.mobile button:hover{
+    background-color: #0072de;
+    color: #fafafa; 
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.whatsapp button{
+    font-family:SamsungOne;
+    margin: 1.75vw;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 7px 20px;
+    border: solid 0px;
+    border-radius: 50px;
+    display: inline;
+    font-size: 3vh;
+    color: #25D366;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.whatsapp button:hover{
+    background-color: #25D366;
+    color: #fafafa;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+    .email button{
+        font-family:SamsungOne;
+        margin: 1.75vw;
+        align-items: center;
+        background-color: #fafafa;
+        padding: 7px 34px;
+        border: solid 0px;
+        border-radius: 50px;
+        display: inline;
+        font-size: 3vh;
+        color: #ee2b2b;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .email button:hover{
+        background-color: #ee2b2b;
+        color: #fafafa;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .facebook button{
+        font-family:SamsungOne;
+        margin: 1.75vw;
+        align-items: center;
+        background-color: #fafafa;
+        padding: 7px 32px;
+        border: solid 0px;
+        border-radius: 50px;
+        display: inline;
+        font-size: 3vh;
+        color: #4267B2;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .facebook button:hover{
+        background-color: #4267B2;
+        color: #fafafa;
+         cursor: pointer;
+         transition: 0.5s;
+    }
+
+
+    .telegram button{
+        font-family:SamsungOne;
+        margin: 1.75vw;
+        align-items: center;
+        background-color: #fafafa;
+        padding: 7px 27px;
+        border: solid 0px;
+        border-radius: 50px;
+        display: inline;
+        font-size: 3vh;
+        color: #229ED9;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .telegram button:hover{
+        background-color: #229ED9;
+        color: #fafafa;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+
+    .instagram button{
+        font-family:SamsungOne;
+        margin: 1.75vw;
+        align-items: center;
+        background-color: #fafafa;
+        padding: 7px 22px;
+        border: solid 0px;
+        border-radius: 50px;
+        display: inline;
+        font-size: 3vh;
+        color:#E1306C;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .instagram button:hover{
+        background-color: #E1306C;
+        color: #fafafa;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+
+
+    .snapchat button{
+        font-family:SamsungOne;
+        margin: 1.75vw;
+        align-items: center;
+        background-color: #fafafa;
+        padding: 7px 28px;
+        border: solid 0px;
+        border-radius: 50px;
+        display: inline;
+        font-size: 3vh;
+        color:#cac700;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .snapchat button:hover{
+        background-color: #cac700;
+        color: #fafafa;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+
+
+    .twitter button{
+        font-family:SamsungOne;
+        margin: 1.75vw;
+        align-items: center;
+        background-color: #fafafa;
+        padding: 7px 32px;
+        border: solid 0px;
+        border-radius: 50px;
+        display: inline;
+        font-size: 3vh;
+        color:#1DA1F2;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .twitter button:hover{
+        background-color: #1DA1F2;
+        color: #fafafa;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+
+    .upi button{
+        font-family:SamsungOne;
+        margin: 1.75vw;
+        align-items: center;
+        background-color: #fafafa;
+        padding: 7px 46px;
+        border: solid 0px;
+        border-radius: 50px;
+        display: inline;
+        font-size: 3vh;
+        color:#FF9900;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .upi button:hover{
+        background-color: #FF9900;;
+        color: #fafafa;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+
+
+    .github button{
+        font-family:SamsungOne;
+        margin: 1.75vw;
+        align-items: center;
+        background-color: #fafafa;
+        padding: 7px 40px;
+        border: solid 0px;
+        border-radius: 50px;
+        display: inline;
+        font-size: 3vh;
+        color:#171515;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .github button:hover{
+        background-color: #171515;;
+        color: #fafafa;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+
+    .all{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
