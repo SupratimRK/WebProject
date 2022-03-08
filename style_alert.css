@@ -21,7 +21,7 @@ body{
 
 .text{
     text-align: center;
-    color: #ff9999;
+    color: #99ffff;
     font-size: 5vh;
     margin: 120px;
     font-family:SamsungOne;
@@ -38,7 +38,7 @@ body{
     line-height: 4vh;
     border: solid;
     border-width: 0.5vh ;
-    border-color: #ff9999;
+    border-color: #99ffff;
     border-radius: 2.8vh;
 }
 .btn{
@@ -49,14 +49,14 @@ body{
 .btn button{
     align-items: center;
     margin-top: 10vh;
-    padding: 24px 50px;
+    padding: 2vh 10vh;
     font-family:SamsungOne;
     font-size: 3vh;
     color: #fafafa;
     background-color: #000;
     border: solid;
     border-width: 0.4vh;
-    border-color: #00C7E4;
+    border-color: #00ff00;
     border-radius: 200px;
     cursor: pointer;
 
