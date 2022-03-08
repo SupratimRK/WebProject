@@ -6,8 +6,7 @@
  <link rel="stylesheet" type="text/css" href="style.css">
  <script type="text/javascript">  if (screen.width <= 1200) { document.location = "alert.html"; }
  </script>
- <script src="https://kit.fontawesome.com/2073f8504c.js" 
-          crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2073f8504c.js" >
 </script>
 
 </head>
@@ -23,10 +22,11 @@
 
  <div class="navbar">
  <ul>
- <li><button onclick="window.location.href = 'index.html';">HOME&emsp;<i class="fa-solid fa-house"></i></button></li>
- <li><a href="time.html" >TIME&emsp;<i class="fa-regular fa-clock"></i></a></li>
- <li><a href="payments.html">PAYMENTS&emsp;<i class="fa-regular fa-credit-card"></i></a></li>
- <li> <a href="mailto:supratimrk@outlook.com" target="_blank">Email&emsp;<i class="fa-regular fa-envelope"></i></a></li>
+      <li><button onclick="window.location.href = 'index.html';">HOME&emsp;<i class="fa-solid fa-house"></i></button></li>
+      <li><a href="time.html" >TIME&emsp;<i class="fa-regular fa-clock"></i></a></li>
+      <li><a href="payments.html">PAYMENTS&emsp;<i class="fa-regular fa-credit-card"></i></a></li>
+      <li><a href="mailto:supratimrk@outlook.com" target="_blank">Email&emsp;<i class="fa-regular fa-envelope"></i></a></li>
+      <li><a id="icon"><i class="fa-regular fa-moon"></i></a></li>
 </ul>
 </div>
 
@@ -50,17 +50,17 @@
 
   <section class="right-sec">
    <figure>
-    <img src="anm3.gif">
+    <img id="anm3" src="anm3.gif">
    </figure>
   </section>
  </main>
  <section class="bottom">
-   <p>&emsp;</p>
-   <p><i class="fa-regular fa-copyright"></i>&ensp;Supratim 2020-2022</p>
-   <p><i class="fa-solid fa-plug"></i>&ensp;Powered by Netlify</p>
-   <p><i class="fa-solid fa-desktop"></i>&ensp;Device Type PC</p>
-   <p><i class="fa-solid fa-clock-rotate-left fa-flip-horizontal"></i>&ensp;Version-1.9 PC βeta</p>
-   <p>&emsp;</p>
+  <p>&emsp;</p>
+  <p><i class="fa-regular fa-copyright"></i>&ensp;Supratim 2020-2022</p>
+  <p><i class="fa-solid fa-plug"></i>&ensp;Powered by Netlify</p>
+  <p><i class="fa-solid fa-desktop"></i>&ensp;Device Type PC</p>
+  <p><i class="fa-solid fa-clock-rotate-left fa-flip-horizontal"></i>&ensp;Version-1.9 PC βeta</p>
+  <p>&emsp;</p>
 </section>
 </header>
 
@@ -69,6 +69,40 @@
   window.addEventListener("load", function(){
     loader.style.display ="none";
   })
+
+  var icon = document.getElementById("icon")
+
+    if(localStorage.getItem("theme") == null){
+    localStorage.setItem("theme", "lite");}
+
+    let localData = localStorage.getItem("theme");
+
+    if(localData == "lite"){
+      document.getElementById("anm3").src = 
+      "anm3.gif";
+      document.body.classList.remove("dark")
+    }
+    else if(localData == "dark"){
+      document.getElementById("anm3").src = 
+      "anm4.gif";
+      document.body.classList.add("dark")
+    }
+
+
+  icon.onclick = function(){
+    document.body.classList.toggle("dark")
+    imgsrc = document.getElementById("anm3").src;
+    if (imgsrc.indexOf("anm3.gif")!= -1){
+      document.getElementById("anm3").src = 
+      "anm4.gif";
+      localStorage.setItem("theme", "dark");
+    }
+    else{
+      document.getElementById("anm3").src = 
+      "anm3.gif"
+      localStorage.setItem("theme", "light");
+    }
+  }
 </script>
 
 

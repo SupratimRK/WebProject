@@ -1,0 +1,127 @@
+@font-face {
+    font-family:SamsungOne;
+    src: url(SamsungOne/SamsungOne_Bold.ttf);
+}
+@font-face {
+    font-family: SamStd;
+    src: url(SamsungOne/SamsungOne_Std.ttf);
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+.dark{
+    --primary-color: #fafafa;
+    --secondary-color: #000;
+    --tertiary-color: #00ccff;
+    --quaternary-color: #ccf5ff;
+    --quinary-color:#1a1a1a;
+    --senary-color:#595959;
+}
+:root{
+    --primary-color: #000;
+    --secondary-color: #fafafa;
+    --tertiary-color: #0072de;
+    --quaternary-color: #00ccff;
+    --quinary-color:#ccebff;
+    --senary-color:#4db8ff;
+}
+
+.container{
+    height: 65vh;
+    width: 100%;
+    background-color: var(--secondary-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.top{
+    height: 35vh;
+    width: 100%;
+    background-color: var(--secondary-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.top1{
+    font-family:SamsungOne;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 2vh;
+    border-bottom: solid;
+    border-width: 0.5vh;
+    border-radius: 2.5vh;
+    border-color: var(--tertiary-color);
+    background-color: var(--quinary-color);
+}
+
+.top1 h1{
+    font-size: 4.5vh;
+}
+.top1 h2{
+    font-size: 6vh;
+    transition: 1s;
+}
+
+.top1 h2:hover{
+    font-size: 9vh;
+    transition: 1s;
+    color: var(--quaternary-color);
+}
+
+.top1 p{
+    color:var(--quaternary-color);
+}
+
+.con1{
+    font-family:SamsungOne;
+    font-size: 3vh;
+}
+
+ul li{
+    margin: 1.8vh 0;
+    border: solid 0px;
+    border-radius: 10vh;
+    background-color: var(--quinary-color);
+    padding: 2.5vh 0;
+    width: 100vw;
+    display: flex;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+ul li a{
+    text-decoration: none;
+    color: var(--primary-color);  
+}
+
+ul li a i{
+ color:var(--tertiary-color)
+}
+
+ul li:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    background-color: var(--senary-color);
+
+}
+
+
+
+
+#loader{
+    background: #fcfefc url(loader.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}

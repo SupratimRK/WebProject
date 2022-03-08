@@ -11,12 +11,24 @@
     margin: 0; padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --primary-color: #fafafa;
+    --secondary-color: #000;
+    --tertiary-color: #0072de;
+    --quaternary-color: #b145e7;
+}
+.dark{
+    --primary-color: #000;
+    --secondary-color: #ffffb3;
+    --tertiary-color: #ffc600;
+    --quaternary-color: #f93100;
+}
  
     
     header{
      width: 100%;
      height: 100vh;
-     background-color: #fafafa;
+     background-color: var(--primary-color);
     }
 
 
@@ -29,7 +41,7 @@
      font-family:SamsungOne;
      border-top: solid;
      border-width: 8px;
-     border-color: #0072de;
+     border-color: var(--tertiary-color);
     }
     
 
@@ -67,7 +79,7 @@
         margin: 0 25px;
     }
     ul li a{
-        color: #000;
+        color: var(--secondary-color);
         position: relative;
         text-decoration: none;
         border: solid 2px;
@@ -80,11 +92,11 @@
     
     ul li a:hover{
         text-decoration: none;
-        background-color: #000;
-        color: #fafafa;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
         border-style: solid;
         border-width: 2px;
-        border-color: #000;
+        border-color: var(--secondary-color);
         border-radius: 50px;
         padding: 6px 30px;
         transition: 0.5s;
@@ -98,36 +110,30 @@
      padding: 9px 20px;
      text-align: center;
      font-size: 16px;
-     color: #fafafa;
+     color: var(--primary-color);
      border: none;
-     background-image: linear-gradient(to right,#0381fe,#0072de);
+     background-image: linear-gradient(to right, var(--quaternary-color),var(--tertiary-color));
      border-radius: 100px;
      cursor: pointer;
      font-family:SamsungOne;
      font-size: 3vh;
+     transition: 0.5s;
     }
 
     .menubtn button:hover{
-        padding: 9px 20px;
-        text-align: center;
-        font-size: 16px;
-        color: #fafafa;
-        border: none;
-        background-image: linear-gradient(to left,#0381fe,#0004de);
-        border-radius: 100px;
-        cursor: pointer;
-        font-family:SamsungOne;
-       }
+        background-image: linear-gradient(to right, var(--tertiary-color),var(--quaternary-color));
+        transition: 0.5s;
+    }
 
 
     .navbar button{
         font-size: 16px;
         padding: 6px 15px;
         text-align: center;
-        color: #fafafa;
+        color: var(--primary-color);
         border: solid 2px;
-        border-color: #000;
-        background-color: #000;
+        border-color: var(--secondary-color);
+        background-color: var(--secondary-color);
         border-radius: 100px;
         cursor: none;
         font-family:SamsungOne;
@@ -136,10 +142,10 @@
     }
     
     .navbar button:hover{  
-        color: #000;
+        color: var(--secondary-color);
         border: solid 2px;
-        border-color: #000;
-        background-color: #fafafa;
+        border-color: var(--secondary-color);
+        background-color: var(--primary-color);
         padding: 6px 30px;
         cursor: not-allowed;
         transition: 0.5s;
@@ -152,6 +158,7 @@
      justify-content: space-between;
      align-items: center;
      font-family:SamsungOne;
+     color: var(--secondary-color);
     }
     
     main .right-sec{
@@ -170,8 +177,8 @@
         margin-top: 8px;
         text-align:center;
         font-size: 12px;
-        color: #fafafa;
-        background-color: #000;
+        color: var(--primary-color);
+        background-color: var(--secondary-color);
         display: flex;
         justify-content: space-between;
         cursor: none;
@@ -182,7 +189,7 @@
      font-size: 4vh;
      text-transform: capitalize;
      font-weight: lighter;
-     color: #000;
+     color: var(--secondary-color);
      margin-top: 100px;
     }
     
@@ -202,16 +209,18 @@
      padding: 12px 30px;
      text-align: center;
      font-size: 3vh;
-     color: #fafafa;
+     color: var(--primary-color);
      border: none;
-     background-image: linear-gradient(to left,#0381fe,#0072de);
+     background-image: linear-gradient(to right,var(--quaternary-color),var(--tertiary-color));
      border-radius: 35px;
      cursor:pointer;
      font-family:SamsungOne;
+     transition: 0.5s;
     }
 
     .left-sec button:hover{
-        background-image: linear-gradient(to right,#0381fe,#0004de);
+        background-image: linear-gradient(to right,var(--tertiary-color),var(--quaternary-color));
+        transition: 0.5s;
     }
 
     #loader{
