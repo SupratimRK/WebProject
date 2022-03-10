@@ -23,7 +23,7 @@
 
 .dark {
     --primary-color: #000;
-    --secondary-color: #ffffb3;
+    --secondary-color: #ffca60;
     --tertiary-color: #ffc600;
     --quaternary-color: #f93100;
 }
@@ -48,13 +48,49 @@ header {
     border-color: var(--tertiary-color);
 }
 
+@keyframes aa1{
+    0% {transform: rotate(0deg);}
+    5% {transform: rotate(9deg);}
+    10% {transform: rotate(18deg);}
+    15% {transform: rotate(27deg);}
+    20% {transform: rotate(36deg);}
+    25% {transform: rotate(45deg);}
+    30% {transform: rotate(54deg);}
+    35% {transform: rotate(63deg);}
+    40% {transform: rotate(72deg);}
+    45% {transform: rotate(81deg);}
+    50% {transform: rotate(90deg);}
+    55% {transform: rotate(99deg);}
+    60% {transform: rotate(108deg);}
+    65% {transform: rotate(117deg);}
+    70% {transform: rotate(126deg);}
+    75% {transform: rotate(135deg);}
+    80% {transform: rotate(144deg);}
+    85% {transform: rotate(153deg);}
+    90% {transform: rotate(162deg);}
+    95% {transform: rotate(171deg);}
+    100% {transform: rotate(180deg);}
 
-.mainheader .logo img {
-    width: 75px;
-    height: 75px;
-    margin-top: 15px;
-    margin-right: 15px;
 }
+
+
+.logo span{
+    font-size: 9vh;
+    margin-top: 15px;
+    margin-left: 3px;
+    color: var(--tertiary-color);
+    cursor: pointer;
+    animation-name: aa1;
+    animation-iteration-count: infinite;
+    animation-duration: 1.7s;
+    transition: 0.8s;
+}
+
+.logo span:hover{
+    color:var(--quaternary-color);
+    transition: 0.8s;
+}
+
 
 @media only screen and (max-width: 1200px) {
     .mainheader .logo img {
@@ -182,11 +218,11 @@ main .left-sec {
 header .bottom {
     width: 100%;
     padding: 0.6%;
-    margin-top: 8px;
+    margin-top: 14px;
     text-align: center;
     font-size: 12px;
     color: var(--primary-color);
-    background-color: var(--secondary-color);
+    background-image: linear-gradient(to right, var(--tertiary-color), var(--quaternary-color));
     display: flex;
     justify-content: space-between;
     cursor: none;
