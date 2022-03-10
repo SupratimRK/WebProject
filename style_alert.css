@@ -1,56 +1,59 @@
 @font-face {
-    font-family:SamsungOne;
+    font-family: SamsungOne;
     src: url(SamsungOne/SamsungOne_Bold.ttf);
 }
+
 @font-face {
     font-family: SamStd;
     src: url(SamsungOne/SamsungOne_Std.ttf);
 }
 
-*{
-    margin: 0; padding: 0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100%;
     height: 100%;
     background-color: #000;
     background-repeat: no-repeat;
 }
 
-.text{
+.text {
     text-align: center;
     color: #99ffff;
     font-size: 5vh;
     margin: 120px;
-    font-family:SamsungOne;
+    font-family: SamsungOne;
 }
 
-.message{
+.message {
     background-color: #252525;
     margin: 3vh;
     padding: 2vh;
-    text-align:left;
+    text-align: left;
     color: #fafafa;
     font-size: 3vh;
-    font-family:SamStd;
+    font-family: SamStd;
     line-height: 4vh;
     border: solid;
-    border-width: 0.5vh ;
+    border-width: 0.5vh;
     border-color: #99ffff;
     border-radius: 2.8vh;
 }
-.btn{
+
+.btn {
     display: flex;
     justify-content: center;
 }
 
-.btn button{
+.btn button {
     align-items: center;
     margin-top: 10vh;
     padding: 2vh 10vh;
-    font-family:SamsungOne;
+    font-family: SamsungOne;
     font-size: 3vh;
     color: #fafafa;
     background-color: #000;
@@ -62,7 +65,7 @@ body{
 
 }
 
-.btn button:hover{
+.btn button:hover {
     color: #000;
     background-color: #fafafa;
 
