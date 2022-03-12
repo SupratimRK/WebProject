@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Payments</title>
+            <link rel="shortcut icon" type="image/png" href="sm.png">
+            <link rel="stylesheet" type="text/css" href="style_payments-mob.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script src="https://kit.fontawesome.com/2073f8504c.js">
+            </script>
+  
+        </head>
+        <body>
+            <div class="all">
+                    <div class="top1">
+                        <div class="upi">
+                            <img src="UPI.svg">
+                        </div>
+                    </div>
+                        <div class="upi1">
+                            <button
+                            onclick="window.location.href = 'upi://pay?pa=dxdt@apl&tn=Send Payment&pn=SUPRATIM MONDAL';">
+                            <i class="fa-solid fa-building-columns"></i>&ensp;
+                            State Bank of India
+                            </button> 
+                        </div>
+
+                        <div class="upi2">
+                            <button
+                            onclick="window.location.href = 'upi://pay?pa=dxdt@pingpay&tn=Send Payment&pn=SUPRATIM MONDAL';">
+                            <i class="fa-solid fa-building-columns"></i>&ensp;Indian Bank
+                            </button> 
+                        </div>
+
+                        <div class="upi3">
+                            <button
+                            onclick="window.location.href = 'upi://pay?pa=s.3@jio&tn=Send Payment&pn=SUPRATIM MONDAL';">
+                            <i class="fa-solid fa-building-columns"></i>&ensp;NSDL Payments Bank
+                            </button> 
+                        </div>
+
+                        <div class="theme">
+                            <a id="theme"><i class="fa-regular fa-moon"></i>&ensp;Toggle Theme</a>
+                        </div>
+
+                    <div class="scroll">
+                        <button onclick="window.scrollTo(0, 1000);">
+                        <i class="fa-solid fa-angles-down"></i>&emsp;Scroll Down
+                    </button>
+                     </div>
+
+                    <div class="card2">
+                        <div class="ac">
+                            <img src="IMPS.png">
+                        </div>
+                        <div class="sbi">
+                            <h2>State Bank of India</h2>
+                            <h3>NAME: SUPRATIM MONDAL</h3>
+                            <h4>
+                                A/C NO: 38482541290<br>
+                                IFSC: SBIN0003074<br>
+                                BRANCH: SAINTHIA ADB
+                            </h4>
+                        </div>
+
+
+                        <div class="ib">
+                            <h2>Indian Bank</h2>
+                            <h3>NAME: SUPRATIM MONDAL</h3>
+                            <h4>
+                                A/C NO: 7148328524<br>
+                                IFSC: IDIB000S535<br>
+                                BRANCH: SAINTHIA
+                            </h4>
+                        </div>
+
+                    </div>
+            </div>
+            <script>
+                var loader = document.getElementById("loader");
+                window.addEventListener("load", function(){
+                  loader.style.display ="none";
+                })
+              
+                var icon = document.getElementById("theme")
+              
+                  if(localStorage.getItem("theme") == null){
+                  localStorage.setItem("theme", "lite");}
+              
+                  let localData = localStorage.getItem("theme");
+              
+                  if(localData == "lite"){
+                    document.body.classList.remove("dark")
+                  }
+                  else if(localData == "dark"){
+                    document.body.classList.add("dark")
+                  }
+              
+              
+                icon.onclick = function(){
+                  document.body.classList.toggle("dark")
+                }
+              </script>
+        </body>
+    </html>        

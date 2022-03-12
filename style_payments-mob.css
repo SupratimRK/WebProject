@@ -1,0 +1,273 @@
+@font-face {
+    font-family: SamsungOne;
+    src: url(SamsungOne/SamsungOne_Bold.ttf);
+}
+
+@font-face {
+    font-family: SamStd;
+    src: url(SamsungOne/SamsungOne_Std.ttf);
+}
+
+:root {
+    --primary-color: #000;
+    --secondary-color: #fafafa;
+    --tertiary-color: #0072de;
+    --quaternary-color: #00ccff;
+    --quinary-color: #ccebff;
+    --senary-color: #4db8ff;
+}
+
+
+.dark {
+    --primary-color: #fafafa;
+    --secondary-color: #000;
+    --tertiary-color: #00ccff;
+    --quaternary-color: #ccf5ff;
+    --quinary-color: #1a1a1a;
+    --senary-color: #595959;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 200vh;
+    background-color: var(--secondary-color);
+}
+
+.top1 {
+    height: 23vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 0.8vh;
+    border-color: var(--tertiary-color);
+    border-radius: 3vh;
+    background-color: var(--quinary-color);
+
+    -webkit-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.48);
+    box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.48);
+
+}
+
+
+
+.upi img {
+    width: 44vw;
+    height: 100%;
+    transition: 0.8s;
+}
+
+.upi img:hover {
+    width: 54vw;
+    height: 100%;
+    transition: 0.8s;
+}
+
+
+.upi1 button {
+    font-family: SamsungOne;
+    margin-top: 6vh;
+    margin-bottom: 1.5vh;
+    width: 100vw;
+    background-color: var(--quinary-color);
+    border: solid 0px;
+    padding: 3.8vh;
+    border-radius: 30vh;
+    font-size: 3vh;
+    color: var(--primary-color);
+    transition: 0.8s;
+}
+
+.upi1 button i {
+    color: var(--tertiary-color);
+}
+
+
+.upi1 button:hover {
+    color: var(--tertiary-color);
+    transition: 0.8s;
+}
+
+.upi2 button {
+    font-family: SamsungOne;
+    margin: 1.5vh 0;
+    width: 100vw;
+    background-color: var(--quinary-color);
+    border: solid 0px;
+    padding: 3.8vh;
+    border-radius: 30vh;
+    font-size: 3vh;
+    color: var(--primary-color);
+    transition: 0.8s;
+}
+
+.upi2 button i {
+    color: var(--tertiary-color);
+}
+
+
+.upi2 button:hover {
+    color: var(--tertiary-color);
+    transition: 0.8s;
+}
+
+.upi3 button {
+    font-family: SamsungOne;
+    margin: 1.5vh 0;
+    width: 100vw;
+    background-color: var(--quinary-color);
+    border: solid 0px;
+    padding: 3.8vh;
+    border-radius: 30vh;
+    font-size: 3vh;
+    color: var(--primary-color);
+    transition: 0.8s;
+}
+
+.upi3 button i {
+    color: var(--tertiary-color);
+}
+
+
+.upi3 button:hover {
+    color: var(--tertiary-color);
+    transition: 0.8s;
+}
+
+.theme{    
+    font-family: SamsungOne;
+    margin: 1.5vh 0;
+    width: 100vw;
+    background-color: var(--quinary-color);
+    border: solid 0px;
+    padding: 3.8vh;
+    border-radius: 30vh;
+    font-size: 3vh;
+    color: var(--primary-color);
+    transition: 0.8s;
+}
+
+.theme a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme i {
+    color: var(--tertiary-color);
+}
+
+
+.theme:hover {
+    color: var(--tertiary-color);
+    transition: 0.8s;
+}
+
+
+
+.scroll button {
+    font-family: SamsungOne;
+    margin: 1.5vh 0;
+    width: 100vw;
+    background-color: var(--quinary-color);
+    border: solid 0px;
+    padding: 3.8vh;
+    border-radius: 30vh;
+    font-size: 3vh;
+    color: var(--primary-color);
+    transition: 0.8s;
+}
+
+.scroll button i {
+    color: var(--tertiary-color);
+}
+
+
+.scroll button:hover {
+    color: var(--tertiary-color);
+    transition: 0.8s;
+}
+
+
+
+
+.ac img{
+    width: 64vw;
+
+}
+
+.ac{
+    height: 27vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4vh 0;
+    border-bottom: solid 0.8vh;
+    border-color: var(--tertiary-color);
+    border-radius: 3vh;
+    border-width: 0.8vh;
+    background-color: var(--quinary-color);
+
+    -webkit-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.4);
+}
+
+.sbi {
+    background-color: var(--quinary-color);
+    border: solid;
+    border-width: 0.5vh;
+    border-color:var(--tertiary-color);
+    border-radius: 2vh;
+    font-family: SamsungOne;
+    color: var(--primary-color);
+    padding: 5vh 3vh;
+    margin: 7vh 2vh;
+
+    -webkit-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.4);
+}
+
+.sbi h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 3vh;
+}
+
+
+
+
+.ib {
+    background-color: var(--quinary-color);
+    border: solid;
+    border-width: 0.5vh;
+    border-color:var(--tertiary-color);
+    border-radius: 2vh;
+    font-family: SamsungOne;
+    color: var(--primary-color);
+    padding: 5vh 3vh;
+    margin: 7vh 2vh;
+
+    -webkit-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.4);
+}
+
+.ib h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 3vh;
+}
+
+
+
